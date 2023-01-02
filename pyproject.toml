@@ -1,4 +1,6 @@
 [tool.pyright]
 include = [
-    "test.py"
+    "test_dir"
 ]
+
+pythonVersion = "3.10"
