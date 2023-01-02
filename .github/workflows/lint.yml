@@ -6,8 +6,12 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  - name: Run Pyright
-    uses: jakebailey/pyright-action@v1
-    with:
-      version: '1.1.286'
-      warnings: false
+  check:
+    runs-on: windows-latest
+
+    steps:
+      - name: Run Pyright
+        uses: jakebailey/pyright-action@v1
+        with:
+          version: '1.1.265'
+          warnings: false
