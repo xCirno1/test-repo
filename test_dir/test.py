@@ -1,4 +1,4 @@
-print("Test repository.")
+print("Test repository.", end=3)  # Pyright should raise error
 
 # Test stash commit 1
 
